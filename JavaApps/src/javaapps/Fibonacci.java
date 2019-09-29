@@ -23,16 +23,12 @@ public class Fibonacci {
         do {
         Scanner getnumber = new Scanner(System.in);
         System.out.println("Please give the last number max 50 :");
-        if (getnumber.hasNext()){
+        
                 lnumber = getnumber.nextInt();
                 exitloop = 1;
-                System.out.println("i am here");
-                } else {
-                    exitloop = 0;
-                    System.out.println("here");
-                        }
+                
        
-        }while((lnumber >50) && (exitloop != 1));
+        }while((lnumber >50));
         System.out.println("your number:"+lnumber);
         System.out.println("");
         for (int i= 0 ; i<(lnumber-2); i++){
