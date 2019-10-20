@@ -23,11 +23,13 @@ public class JavaApps {
         int menuNumber;
         Fibonacci fibonacci = new Fibonacci();
         Primenumber primenumber = new Primenumber();
+        Palindrome palindrome = new Palindrome();
         
         do {
             System.out.println("Please choose which program would you like to run :");
             System.out.println("1: Fibonacci series");    
             System.out.println("2: A prime number");
+            System.out.println("3: Palindrome");
             System.out.println("0: EXIT");
                 Scanner input =  new Scanner(System.in);
                 if (input.hasNextInt()) {
@@ -39,6 +41,9 @@ public class JavaApps {
                             break;
                         case 2:
                             primenumber.run();
+                            break;
+                        case 3:
+                            palindrome.run();
                             break;
                         default:
                             System.exit(0);
