@@ -24,12 +24,15 @@ public class JavaApps {
         Fibonacci fibonacci = new Fibonacci();
         Primenumber primenumber = new Primenumber();
         Palindrome palindrome = new Palindrome();
+        Armstrong armstrong = new Armstrong();
         
         do {
             System.out.println("Please choose which program would you like to run :");
             System.out.println("1: Fibonacci series");    
             System.out.println("2: A prime number");
             System.out.println("3: Palindrome");
+            System.out.println("4: Integer Palindrome");
+            System.out.println("5: Armstrong number");
             System.out.println("0: EXIT");
                 Scanner input =  new Scanner(System.in);
                 if (input.hasNextInt()) {
@@ -44,6 +47,12 @@ public class JavaApps {
                             break;
                         case 3:
                             palindrome.run();
+                            break;
+                        case 4:
+                            palindrome.run();
+                            break;
+                        case 5:
+                            armstrong.run();
                             break;
                         default:
                             System.exit(0);
