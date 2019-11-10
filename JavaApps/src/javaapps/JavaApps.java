@@ -25,14 +25,18 @@ public class JavaApps {
         Primenumber primenumber = new Primenumber();
         Palindrome palindrome = new Palindrome();
         Armstrong armstrong = new Armstrong();
+        Avoidingdeadlock avoidingdeadlock = new Avoidingdeadlock();
+        Help help = new Help();
         
         do {
             System.out.println("Please choose which program would you like to run :");
+            System.out.println("666: Help test menu");
             System.out.println("1: Fibonacci series");    
             System.out.println("2: A prime number");
             System.out.println("3: Palindrome");
             System.out.println("4: Integer Palindrome");
             System.out.println("5: Armstrong number");
+            System.out.println("6: Avoiding deadlock");
             System.out.println("0: EXIT");
                 Scanner input =  new Scanner(System.in);
                 if (input.hasNextInt()) {
@@ -53,6 +57,12 @@ public class JavaApps {
                             break;
                         case 5:
                             armstrong.run();
+                            break;
+                        case 6:
+                            avoidingdeadlock.run();
+                            break;
+                        case 666:
+                            help.run();
                             break;
                         default:
                             System.exit(0);
