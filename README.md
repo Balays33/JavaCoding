@@ -22,3 +22,18 @@ A number is called an Armstrong number if it is equal to the cube of its every d
 6. Avoiding deadlock in Java (solution)
 This is one of the interesting programs from Java Interviews, mostly asked to 2 to 3 years of experienced programmers or higher. The interviewer simply asked you to write code where a resource is accessed by multiple threads. You need to write code in such a way that no deadlock should occur. The trick to solving this problem is acquiring resources in order and release them in reverse order, e.g. first acquire resource R1 and only if you have got R1 to go for R2. This way, you can avoid deadlock.
 
+
+
+51. Smallest Positive IntegerThis is a demo task.
+
+       Write a function:
+       class Solution { public int solution(int[] A); }
+       that, given an array A of N integers, returns the smallest positive integer (greater than 0) that does not occur in A.
+       For example, given A = [1, 3, 6, 4, 1, 2], the function should return 5.
+       Given A = [1, 2, 3], the function should return 4.
+       Given A = [−1, −3], the function should return 1.
+       Write an efficient algorithm for the following assumptions:
+       N is an integer within the range [1..100,000];
+       each element of array A is an integer within the range [−1,000,000..1,000,000].
+
+
