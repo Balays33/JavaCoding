@@ -24,7 +24,7 @@ This is one of the interesting programs from Java Interviews, mostly asked to 2 
 
 
 
-51. Smallest Positive IntegerThis is a demo task.
+51. Smallest Positive Integer
 
        Write a function:
        class Solution { public int solution(int[] A); }
