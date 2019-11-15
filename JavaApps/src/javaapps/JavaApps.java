@@ -31,6 +31,7 @@ public class JavaApps {
         OddOccurrencesInArray oddOccurrencesInArray = new OddOccurrencesInArray();
         CyclicRotation cyclicRotation =  new CyclicRotation();
         FrogJmp frogJmp = new FrogJmp();
+        PermCheck permCheck = new PermCheck();
         Help help = new Help();
         
         
@@ -50,7 +51,10 @@ public class JavaApps {
             System.out.println("52: BinaryGap");
             System.out.println("53: OddOccurrencesInArray");
             System.out.println("54: CyclicRotation");
-            System.out.println("55: FrogJump");
+            System.out.println("55: permCheck");
+            
+            
+            System.out.println("58: FrogJump");
             
             System.out.println("0: EXIT");
                 Scanner input =  new Scanner(System.in);
@@ -110,6 +114,12 @@ public class JavaApps {
                             int jumpY = 85;
                             int jumpD = 30;
                             frogJmp.solution(jumpX, jumpY, jumpD);
+                            break;
+                        case 58:
+                            int[] permC = new int[]{4, 1, 3, 2};
+                            //int[] permC = new int[]{4, 1, 3};
+                            //int[] permC = new int[]{43, 17, 13, 22};
+                            permCheck.solution(permC);
                             break;
                         case 666:
                             help.run();
