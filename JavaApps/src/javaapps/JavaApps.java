@@ -26,7 +26,13 @@ public class JavaApps {
         Palindrome palindrome = new Palindrome();
         Armstrong armstrong = new Armstrong();
         Avoidingdeadlock avoidingdeadlock = new Avoidingdeadlock();
+        SmallestPositiveInteger  smallestpositiveinteger = new SmallestPositiveInteger();
+        BinaryGap binaryGap = new BinaryGap();
         Help help = new Help();
+        
+        
+        
+        
         
         do {
             System.out.println("Please choose which program would you like to run :");
@@ -37,6 +43,9 @@ public class JavaApps {
             System.out.println("4: Integer Palindrome");
             System.out.println("5: Armstrong number");
             System.out.println("6: Avoiding deadlock");
+            System.out.println("51: Smallest Positive Integer");
+            System.out.println("52: BinaryGap");
+            
             System.out.println("0: EXIT");
                 Scanner input =  new Scanner(System.in);
                 if (input.hasNextInt()) {
@@ -60,6 +69,21 @@ public class JavaApps {
                             break;
                         case 6:
                             avoidingdeadlock.run();
+                            break;
+                        case 51:
+                            int[] A = new int[]{1, 3, 6, 4, 1, 2};
+                            //int[] B = new int[]{1, 2, 3};
+                            //int[] C = new int[]{-1, -3};
+                            //int[] D = new int[]{-1, -3, 2, 4, 1, 2,5,7,8,11,14,13};
+                            smallestpositiveinteger.solution(A);
+                            //smallestpositiveinteger.solution(B);
+                            //smallestpositiveinteger.solution(C);
+                            //smallestpositiveinteger.solution(D);
+                            //smallestpositiveinteger.sort();
+                            break;
+                        case 52:
+                            int number = 529;
+                            binaryGap.solution(number);
                             break;
                         case 666:
                             help.run();
