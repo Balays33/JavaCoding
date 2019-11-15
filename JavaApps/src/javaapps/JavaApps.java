@@ -30,6 +30,7 @@ public class JavaApps {
         BinaryGap binaryGap = new BinaryGap();
         OddOccurrencesInArray oddOccurrencesInArray = new OddOccurrencesInArray();
         CyclicRotation cyclicRotation =  new CyclicRotation();
+        FrogJmp frogJmp = new FrogJmp();
         Help help = new Help();
         
         
@@ -49,6 +50,7 @@ public class JavaApps {
             System.out.println("52: BinaryGap");
             System.out.println("53: OddOccurrencesInArray");
             System.out.println("54: CyclicRotation");
+            System.out.println("55: FrogJump");
             
             System.out.println("0: EXIT");
                 Scanner input =  new Scanner(System.in);
@@ -102,6 +104,12 @@ public class JavaApps {
                             //int[] cr1 = new int[]{1, 2, 3, 4};
                             //int  k = 4;
                             cyclicRotation.solution(cr1,k);;
+                            break;
+                        case 55:
+                            int jumpX = 10;
+                            int jumpY = 85;
+                            int jumpD = 30;
+                            frogJmp.solution(jumpX, jumpY, jumpD);
                             break;
                         case 666:
                             help.run();
