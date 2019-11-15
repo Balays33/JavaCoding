@@ -28,6 +28,7 @@ public class JavaApps {
         Avoidingdeadlock avoidingdeadlock = new Avoidingdeadlock();
         SmallestPositiveInteger  smallestpositiveinteger = new SmallestPositiveInteger();
         BinaryGap binaryGap = new BinaryGap();
+        OddOccurrencesInArray oddOccurrencesInArray = new OddOccurrencesInArray();
         Help help = new Help();
         
         
@@ -45,6 +46,7 @@ public class JavaApps {
             System.out.println("6: Avoiding deadlock");
             System.out.println("51: Smallest Positive Integer");
             System.out.println("52: BinaryGap");
+            System.out.println("52: OddOccurrencesInArray");
             
             System.out.println("0: EXIT");
                 Scanner input =  new Scanner(System.in);
@@ -82,8 +84,13 @@ public class JavaApps {
                             //smallestpositiveinteger.sort();
                             break;
                         case 52:
-                            int number = 529;
+                            System.out.println("Please give a integer number:");
+                            Scanner s = new Scanner(System.in);
+                            int number = s.nextInt();
                             binaryGap.solution(number);
+                            break;
+                        case 53:
+                            //oddOccurrencesInArray.run();
                             break;
                         case 666:
                             help.run();
