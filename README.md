@@ -25,6 +25,9 @@ This is one of the interesting programs from Java Interviews, mostly asked to 2 
 
 https://app.codility.com/programmers/lessons/1-iterations/
 
+Lesson 1
+Iterations
+
 51. Smallest Positive Integer
 
        Write a function:
@@ -62,7 +65,10 @@ https://app.codility.com/programmers/lessons/1-iterations/
        Write an efficient algorithm for the following assumptions:
 
        N is an integer within the range [1..2,147,483,647].
-       
+ 
+Lesson 2
+Arrays
+
   53. oddOccurrencesInArray
   
       A non-empty array A consisting of N integers is given. The array contains an odd number of elements, 
@@ -138,3 +144,6 @@ https://app.codility.com/programmers/lessons/1-iterations/
          N and K are integers within the range [0..100];
          each element of array A is an integer within the range [−1,000..1,000].
          In your solution, focus on correctness. The performance of your solution will not be the focus of the assessment.
+         
+Lesson 3
+Time Complexity
