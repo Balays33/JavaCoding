@@ -25,6 +25,9 @@ This is one of the interesting programs from Java Interviews, mostly asked to 2 
 
 https://app.codility.com/programmers/lessons/1-iterations/
 
+Lesson 1
+Iterations
+
 51. Smallest Positive Integer
 
        Write a function:
@@ -62,8 +65,11 @@ https://app.codility.com/programmers/lessons/1-iterations/
        Write an efficient algorithm for the following assumptions:
 
        N is an integer within the range [1..2,147,483,647].
-       
-  53. oddOccurrencesInArray
+ 
+Lesson 2
+Arrays
+
+53. oddOccurrencesInArray
   
       A non-empty array A consisting of N integers is given. The array contains an odd number of elements, 
       and each element of the array can be paired with another element that has the same value,
@@ -138,3 +144,37 @@ https://app.codility.com/programmers/lessons/1-iterations/
          N and K are integers within the range [0..100];
          each element of array A is an integer within the range [−1,000..1,000].
          In your solution, focus on correctness. The performance of your solution will not be the focus of the assessment.
+         
+Lesson 3
+Time Complexity
+
+55. FrogJmp
+
+      A small frog wants to get to the other side of the road. 
+      The frog is currently located at position X and wants to get to a position greater than or equal to Y.
+      The small frog always jumps a fixed distance, D.
+
+      Count the minimal number of jumps that the small frog must perform to reach its target.
+
+      Write a function:
+
+      class Solution { public int solution(int X, int Y, int D); }
+
+      that, given three integers X, Y and D, returns the minimal number of jumps from position X to a position equal
+      to or greater than Y.
+
+      For example, given:
+
+        X = 10
+        Y = 85
+        D = 30
+      the function should return 3, because the frog will be positioned as follows:
+
+      after the first jump, at position 10 + 30 = 40
+      after the second jump, at position 10 + 30 + 30 = 70
+      after the third jump, at position 10 + 30 + 30 + 30 = 100
+      Write an efficient algorithm for the following assumptions:
+
+      X, Y and D are integers within the range [1..1,000,000,000];
+      X ≤ Y.
+
