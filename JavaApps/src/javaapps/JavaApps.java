@@ -29,6 +29,7 @@ public class JavaApps {
         SmallestPositiveInteger  smallestpositiveinteger = new SmallestPositiveInteger();
         BinaryGap binaryGap = new BinaryGap();
         OddOccurrencesInArray oddOccurrencesInArray = new OddOccurrencesInArray();
+        CyclicRotation cyclicRotation =  new CyclicRotation();
         Help help = new Help();
         
         
@@ -36,7 +37,7 @@ public class JavaApps {
         
         
         do {
-            System.out.println("Please choose which program would you like to run :");
+            System.out.println("\n Please choose which program would you like to run :");
             System.out.println("666: Help test menu");
             System.out.println("1: Fibonacci series");    
             System.out.println("2: A prime number");
@@ -46,7 +47,8 @@ public class JavaApps {
             System.out.println("6: Avoiding deadlock");
             System.out.println("51: Smallest Positive Integer");
             System.out.println("52: BinaryGap");
-            System.out.println("52: OddOccurrencesInArray");
+            System.out.println("53: OddOccurrencesInArray");
+            System.out.println("54: CyclicRotation");
             
             System.out.println("0: EXIT");
                 Scanner input =  new Scanner(System.in);
@@ -90,7 +92,16 @@ public class JavaApps {
                             binaryGap.solution(number);
                             break;
                         case 53:
-                            //oddOccurrencesInArray.run();
+                            int[] oia = new int[]{9, 3, 9, 3, 9, 7, 9};
+                            //int[] oia = new int[]{3, 4, 4, 7, 9, 7, 9};
+                            oddOccurrencesInArray.solution(oia);;
+                            break;
+                        case 54:
+                            int[] cr1 = new int[]{3, 8, 9, 7, 6};
+                            int  k = 3;
+                            //int[] cr1 = new int[]{1, 2, 3, 4};
+                            //int  k = 4;
+                            cyclicRotation.solution(cr1,k);;
                             break;
                         case 666:
                             help.run();
