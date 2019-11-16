@@ -34,6 +34,7 @@ public class JavaApps {
         PermCheck permCheck = new PermCheck();
         PassingCars passingCars = new PassingCars();
         MaxProductOfThree maxProductOfThree = new MaxProductOfThree();
+        Distinct distinct = new Distinct();
         Help help = new Help();
         
         
@@ -59,6 +60,7 @@ public class JavaApps {
             System.out.println("65: PassingCars");
             
             System.out.println("70: maxProductOfThree");
+             System.out.println("71: Distinct");
             
             
             System.out.println("0: EXIT");
@@ -134,8 +136,13 @@ public class JavaApps {
                             break;
                         case 70:
                             int[] maxProductOfThreeN = new int[]{-3,1,2,-2,5,6};
-                     
                             maxProductOfThree.solution(maxProductOfThreeN);
+                            break;
+                        case 71:
+                            //2 2 1 2 3 1
+                            int[] distinctA = new int[]{2,2,1,2,3,1};
+                            //int[] distinctA = new int[]{7,16,16,3,80,3};
+                            distinct.solution(distinctA);
                             break;
                         case 666:
                             help.run();
