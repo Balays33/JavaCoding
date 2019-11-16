@@ -32,6 +32,8 @@ public class JavaApps {
         CyclicRotation cyclicRotation =  new CyclicRotation();
         FrogJmp frogJmp = new FrogJmp();
         PermCheck permCheck = new PermCheck();
+        PassingCars passingCars = new PassingCars();
+        MaxProductOfThree maxProductOfThree = new MaxProductOfThree();
         Help help = new Help();
         
         
@@ -51,10 +53,13 @@ public class JavaApps {
             System.out.println("52: BinaryGap");
             System.out.println("53: OddOccurrencesInArray");
             System.out.println("54: CyclicRotation");
-            System.out.println("55: permCheck");
+            System.out.println("55: FrogJump");
+            System.out.println("58: permCheck");
             
+            System.out.println("65: PassingCars");
             
-            System.out.println("58: FrogJump");
+            System.out.println("70: maxProductOfThree");
+            
             
             System.out.println("0: EXIT");
                 Scanner input =  new Scanner(System.in);
@@ -116,10 +121,21 @@ public class JavaApps {
                             frogJmp.solution(jumpX, jumpY, jumpD);
                             break;
                         case 58:
-                            int[] permC = new int[]{4, 1, 3, 2};
+                            //int[] permC = new int[]{4, 1, 3, 2};
                             //int[] permC = new int[]{4, 1, 3};
+                            int[] permC = new int[]{9,8,7,6,4,3,2};
                             //int[] permC = new int[]{43, 17, 13, 22};
                             permCheck.solution(permC);
+                            break;
+                            
+                        case 65:
+                            int[] passingCarsN = new int[]{0,1,0,1,1};
+                            passingCars.solution(passingCarsN);
+                            break;
+                        case 70:
+                            int[] maxProductOfThreeN = new int[]{-3,1,2,-2,5,6};
+                     
+                            maxProductOfThree.solution(maxProductOfThreeN);
                             break;
                         case 666:
                             help.run();
