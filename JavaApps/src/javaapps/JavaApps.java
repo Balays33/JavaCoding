@@ -35,6 +35,7 @@ public class JavaApps {
         PassingCars passingCars = new PassingCars();
         MaxProductOfThree maxProductOfThree = new MaxProductOfThree();
         Distinct distinct = new Distinct();
+        Triangle triangle = new Triangle();
         Help help = new Help();
         
         
@@ -60,7 +61,9 @@ public class JavaApps {
             System.out.println("65: PassingCars");
             
             System.out.println("70: maxProductOfThree");
-             System.out.println("71: Distinct");
+            System.out.println("71: Distinct");
+            System.out.println("72: Triangle");
+             
             
             
             System.out.println("0: EXIT");
@@ -144,8 +147,16 @@ public class JavaApps {
                             //int[] distinctA = new int[]{7,16,16,3,80,3};
                             distinct.solution(distinctA);
                             break;
+                        case 72:
+                            //2 2 1 2 3 1
+                            int[] triangleT = new int[]{10,2,5,1,8,20};
+                            //int[] distinctA = new int[]{7,16,16,3,80,3};
+                            triangle.solution(triangleT);
+                            break;
                         case 666:
-                            help.run();
+                            //help.run();
+                            help.solution(268);
+                            //help.solution(1,6,2);
                             break;
                         default:
                             System.exit(0);
