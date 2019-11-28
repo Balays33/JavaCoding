@@ -148,9 +148,8 @@ public class JavaApps {
                             distinct.solution(distinctA);
                             break;
                         case 72:
-                            //2 2 1 2 3 1
-                            int[] triangleT = new int[]{10,2,5,1,8,20};
-                            //int[] distinctA = new int[]{7,16,16,3,80,3};
+                            //int[] triangleT = new int[]{10,2,5,1,8,20};
+                            int[] triangleT = new int[]{10,50,5,1};
                             triangle.solution(triangleT);
                             break;
                         case 666:

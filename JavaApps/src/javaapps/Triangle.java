@@ -11,9 +11,10 @@ package javaapps;
  */
 public class Triangle {
     
-    private int result;
+    
     int temp;
     boolean is_sorted;
+    private int returnN =0;
     
     public int solution(int[] A){
         
@@ -43,9 +44,28 @@ public class Triangle {
          for (int i = 0; i<A.length;i++){
             System.out.print(" "+A[i]);
             }
+         
+         // triangular loop
+         for (int i =0; i<A.length-2; i++){
+             for (int  j=i+1; j<A.length-1; j++){
+                 for (int k =j+1; k<A.length; k++){
+                     
+                     if ((A[i]< A[j]+A[k]) && (A[j]< A[i]+A[k]) && (A[k]< A[j]+A[i])){
+                         System.out.print("\n YES");
+                         returnN =1;
+                         System.out.print("triangular numbers: "+A[i]+" "+A[j]+" "+A[k]);
+                     }
+                     
+                 }
+
+             }
+             
+         }
+         
+   
         
-    System.out.println(" triangular triplet"+result);
-    return result;
+    System.out.println("\n triangular triplet : "+returnN);
+    return returnN;
     }
     
 }
