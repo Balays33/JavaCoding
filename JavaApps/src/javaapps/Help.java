@@ -264,6 +264,7 @@ public class Help {
         return a;
     }
     */
+    /*
     int end;
     int number =5;
     String S = "hashed array to store count of digits";
@@ -308,4 +309,6 @@ public class Help {
         // return the result 
         return result; 
     }
+    */
+    
 }

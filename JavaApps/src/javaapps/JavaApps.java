@@ -36,6 +36,7 @@ public class JavaApps {
         MaxProductOfThree maxProductOfThree = new MaxProductOfThree();
         Distinct distinct = new Distinct();
         Triangle triangle = new Triangle();
+        NumberOfDiscIntersections numberOfDiscIntersections = new NumberOfDiscIntersections();
         Help help = new Help();
         
         
@@ -63,6 +64,8 @@ public class JavaApps {
             System.out.println("70: maxProductOfThree");
             System.out.println("71: Distinct");
             System.out.println("72: Triangle");
+            System.out.println("73: NumberOfDiscIntersections");
+            
              
             
             
@@ -152,9 +155,14 @@ public class JavaApps {
                             int[] triangleT = new int[]{10,50,5,1};
                             triangle.solution(triangleT);
                             break;
+                        case 73:
+                            int[] numberOfDiscIntersectionsN = new int[]{1,5,2,1,4};
+                            //int[] numberOfDiscIntersectionsN = new int[]{1,5,2,1,4,0};
+                            numberOfDiscIntersections.solution(numberOfDiscIntersectionsN);
+                            break;
                         case 666:
                             //help.run();
-                            help.solution(268);
+                           // help.solution(268);
                             //help.solution(1,6,2);
                             break;
                         default:
