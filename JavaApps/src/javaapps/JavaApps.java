@@ -37,6 +37,7 @@ public class JavaApps {
         Distinct distinct = new Distinct();
         Triangle triangle = new Triangle();
         NumberOfDiscIntersections numberOfDiscIntersections = new NumberOfDiscIntersections();
+        Brackets brackets = new Brackets();
         Help help = new Help();
         
         
@@ -65,6 +66,8 @@ public class JavaApps {
             System.out.println("71: Distinct");
             System.out.println("72: Triangle");
             System.out.println("73: NumberOfDiscIntersections");
+            System.out.println("74: Brackets");
+            
             
              
             
@@ -159,6 +162,14 @@ public class JavaApps {
                             int[] numberOfDiscIntersectionsN = new int[]{1,5,2,1,4};
                             //int[] numberOfDiscIntersectionsN = new int[]{1,5,2,1,4,0};
                             numberOfDiscIntersections.solution(numberOfDiscIntersectionsN);
+                            break;
+                         case 74:
+                            //String bracketsS ="()]()[][";
+                            //String bracketsS ="()]()][][";
+                            //String bracketsS = "([)()]";
+                            //String bracketsS = "{[()()]}";
+                            String bracketsS = "{[()()]{}}}{{(()({}}}";
+                            brackets.solution(bracketsS);
                             break;
                         case 666:
                             //help.run();

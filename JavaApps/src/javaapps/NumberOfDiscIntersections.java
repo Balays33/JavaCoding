@@ -46,6 +46,9 @@ public class NumberOfDiscIntersections {
                         System.out.println("Yes");
                         if ((leftN2 == leftN) || (leftN2 == rightN) || (rightN2 == leftN) || (rightN2 == rightN)){
                             result++;
+                        }if ((leftN2>leftN) && (rightN2 < rightN)){
+                             System.out.println("\n inside ");
+                             break;
                         } else {result+=2;}
                         System.out.println("\n Result : "+result);
                     }
