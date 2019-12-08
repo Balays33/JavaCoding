@@ -39,6 +39,7 @@ public class JavaApps {
         NumberOfDiscIntersections numberOfDiscIntersections = new NumberOfDiscIntersections();
         Brackets brackets = new Brackets();
         Fish fish = new Fish();
+        Nesting nesting = new Nesting();
         Help help = new Help();
         
         
@@ -69,6 +70,8 @@ public class JavaApps {
             System.out.println("73: NumberOfDiscIntersections");
             System.out.println("74: Brackets");
             System.out.println("75: Fish");
+            System.out.println("76: Nesting");
+            
             
             
              
@@ -179,6 +182,12 @@ public class JavaApps {
                             int[] fishA = new int[]{3,2,5,4,1};
                             int[] fishB = new int[]{1,0,0,1,1};
                             fish.solution(fishA,fishB);
+                            break;
+                        case 76:
+                            String nestingS = "(()(())())";
+                            //String nestingS = "(()(";
+                            //String nestingS = "";
+                            nesting.solution(nestingS);
                             break;
                         case 666:
                             //help.run();
