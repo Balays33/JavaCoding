@@ -40,6 +40,7 @@ public class JavaApps {
         Brackets brackets = new Brackets();
         Fish fish = new Fish();
         Nesting nesting = new Nesting();
+        Dominator dominator  = new Dominator();
         Help help = new Help();
         
         
@@ -71,6 +72,8 @@ public class JavaApps {
             System.out.println("74: Brackets");
             System.out.println("75: Fish");
             System.out.println("76: Nesting");
+            
+            System.out.println("78: Dominator");
             
             
             
@@ -188,6 +191,11 @@ public class JavaApps {
                             //String nestingS = "(()(";
                             //String nestingS = "";
                             nesting.solution(nestingS);
+                            break;
+                        case 78:
+                            //int[] dominatorN = {3,4,3,2,3,-1,3,3};
+                            int[] dominatorN = {4,4,4,4,2,-1,3,1};
+                            dominator.solution(dominatorN);
                             break;
                         case 666:
                             //help.run();
