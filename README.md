@@ -551,6 +551,8 @@ Stacks and Queues
 
 76. Nesting
 
+    Determine whether a given string of parentheses (single type) is properly nested.
+
     A string S consisting of N characters is called properly nested if:
 
     S is empty;
