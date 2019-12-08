@@ -40,19 +40,7 @@ public class Fish {
          
          }
          
-        /* 
-         for (int i=0;i<A.length-1;i++){
-             for(int j=i+1;j<B.length-1;j++){
-                 if (B[j]!=B[j+1]){
-                     if (A[j] < A[j+1]){
-                         A[j] =0;
-                     } else {
-                         A[j+1] = 0;
-                     }
-                 }
-             }
-        }
-        */
+        
          System.out.println("\n ");
         for (int i=0;i<A.length;i++){
             System.out.print(" "+A[i]);
