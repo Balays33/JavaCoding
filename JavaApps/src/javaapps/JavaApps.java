@@ -41,6 +41,7 @@ public class JavaApps {
         Fish fish = new Fish();
         Nesting nesting = new Nesting();
         Dominator dominator  = new Dominator();
+        MaxProfit maxProfit = new MaxProfit();
         Help help = new Help();
         
         
@@ -74,6 +75,8 @@ public class JavaApps {
             System.out.println("76: Nesting");
             
             System.out.println("78: Dominator");
+            
+            System.out.println("80: MaxProfit");   
             
             
             
@@ -197,6 +200,10 @@ public class JavaApps {
                             int[] dominatorN = {4,4,4,4,2,-1,3,1};
                             dominator.solution(dominatorN);
                             break;
+                        case 80:
+                            int[] maxProfitN = {23171,21011,21123,21366,21013,21367};
+                            maxProfit.solution(maxProfitN);
+                            break;  
                         case 666:
                             //help.run();
                            // help.solution(268);
