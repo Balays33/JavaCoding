@@ -42,6 +42,7 @@ public class JavaApps {
         Nesting nesting = new Nesting();
         Dominator dominator  = new Dominator();
         MaxProfit maxProfit = new MaxProfit();
+        MaxSliceSum maxSliceSum = new MaxSliceSum();
         Help help = new Help();
         
         
@@ -76,7 +77,9 @@ public class JavaApps {
             
             System.out.println("78: Dominator");
             
-            System.out.println("80: MaxProfit");   
+            System.out.println("80: MaxProfit");
+            System.out.println("81: MaxSliceSum");
+            
             
             
             
@@ -203,6 +206,11 @@ public class JavaApps {
                         case 80:
                             int[] maxProfitN = {23171,21011,21123,21366,21013,21367};
                             maxProfit.solution(maxProfitN);
+                            break;  
+                        case 81:
+                            //int[] maxSliceSumN = {3,2,-6,4,0};
+                            int[] maxSliceSumN = {3,2,6,4,0,6,1};
+                            maxSliceSum.solution(maxSliceSumN);
                             break;  
                         case 666:
                             //help.run();
