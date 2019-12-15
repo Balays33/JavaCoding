@@ -43,6 +43,7 @@ public class JavaApps {
         Dominator dominator  = new Dominator();
         MaxProfit maxProfit = new MaxProfit();
         MaxSliceSum maxSliceSum = new MaxSliceSum();
+        MaxProfitS maxProfitS = new MaxProfitS();
         Help help = new Help();
         
         
@@ -58,6 +59,7 @@ public class JavaApps {
             System.out.println("4: Integer Palindrome");
             System.out.println("5: Armstrong number");
             System.out.println("6: Avoiding deadlock");
+            System.out.println("50: MaxProfitS");
             System.out.println("51: Smallest Positive Integer");
             System.out.println("52: BinaryGap");
             System.out.println("53: OddOccurrencesInArray");
@@ -109,6 +111,11 @@ public class JavaApps {
                             break;
                         case 6:
                             avoidingdeadlock.run();
+                            break;
+                        case 50:
+                            int[] maxProfitSN = new int[]{5,11,3,50,60,90};
+                            int maxProfitSK = 2;
+                            maxProfitS.solution(maxProfitSN,maxProfitSK);
                             break;
                         case 51:
                             int[] A = new int[]{1, 3, 6, 4, 1, 2};
@@ -213,9 +220,9 @@ public class JavaApps {
                             maxSliceSum.solution(maxSliceSumN);
                             break;  
                         case 666:
-                            //help.run();
-                           // help.solution(268);
-                            //help.solution(1,6,2);
+                            String helpS = "o";
+                            String helpT = "odd";
+                            help.solution(helpS,helpT);
                             break;
                         default:
                             System.exit(0);

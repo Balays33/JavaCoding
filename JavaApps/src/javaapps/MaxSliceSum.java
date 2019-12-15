@@ -41,7 +41,15 @@ public class MaxSliceSum {
         
         for (int i = 0;i<(slide+remainder);i++){
             
-                helpN = A[i]+A[i+1];
+            if (i==slide+remainder-1){
+                   helpN = A[i];
+                   if (helpN > result){
+                      result = helpN;
+                  }
+                  System.out.println("helpN:"+helpN);    
+            }
+            else{
+                  helpN = A[i]+A[i+1];
                   if (helpN > result){
                       result = helpN;
                   }
@@ -49,7 +57,7 @@ public class MaxSliceSum {
                   if (helpN > result){
                       result = helpN;
                   }  
-             
+            }
         
         
         }
