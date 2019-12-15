@@ -23,6 +23,15 @@ A number is called an Armstrong number if it is equal to the cube of its every d
 This is one of the interesting programs from Java Interviews, mostly asked to 2 to 3 years of experienced programmers or higher. The interviewer simply asked you to write code where a resource is accessed by multiple threads. You need to write code in such a way that no deadlock should occur. The trick to solving this problem is acquiring resources in order and release them in reverse order, e.g. first acquire resource R1 and only if you have got R1 to go for R2. This way, you can avoid deadlock.
 
 
+50.
+https://www.algoexpert.io/product
+
+
+Question: 
+Max Profit With KTransactions You are given an array of integers representing the prices of a single stock on varlous days (each index in the array represent different day). You arealso given an integer k, which represents the number of transactions you are allowed to make One tr consistsof buying thestock on agiven day and selling it on another, later day. Write a function that returns the maxámum pr you can make buying and selling the stock, given k transactions. Note that you can only hold 1 share of the stockatatime; in words you cannot buy more than 1 share of the stock on any given day, and you cannot buy a share of the stockif you another share. Note that you also don't need to use all k transactions that you're allowed.
+Sample input [5,11,3,50,60,90],2
+Sample output: 93 (Buy.5,Sell: 11; Buy. 3, Sell: 90)
+
 https://app.codility.com/programmers/lessons/1-iterations/
 
 Lesson 1
