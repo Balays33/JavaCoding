@@ -224,8 +224,8 @@ public class JavaApps {
                             break; 
                          case 82:
                             // the function should return 17, because no double slice of array A has a sum of greater than 17.
-                            //int[] maxDoubleSliceSumN = {3,2,6,-1,4,5,-1,2};
-                            int[] maxDoubleSliceSumN = {5,1,3,-2,5,-1,6,2};
+                            int[] maxDoubleSliceSumN = {3,2,6,-1,4,5,-1,2};
+                            //int[] maxDoubleSliceSumN = {5,1,3,-2,5,-1,6,2};
                             maxDoubleSliceSum.solution(maxDoubleSliceSumN);
                             break;    
                         case 666:
