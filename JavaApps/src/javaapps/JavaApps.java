@@ -43,6 +43,7 @@ public class JavaApps {
         Dominator dominator  = new Dominator();
         MaxProfit maxProfit = new MaxProfit();
         MaxSliceSum maxSliceSum = new MaxSliceSum();
+        MaxDoubleSliceSum maxDoubleSliceSum = new MaxDoubleSliceSum();
         MaxProfitS maxProfitS = new MaxProfitS();
         Help help = new Help();
         
@@ -81,6 +82,8 @@ public class JavaApps {
             
             System.out.println("80: MaxProfit");
             System.out.println("81: MaxSliceSum");
+            System.out.println("82: MaxDoubleSliceSum");
+            
             
             
             
@@ -215,10 +218,16 @@ public class JavaApps {
                             maxProfit.solution(maxProfitN);
                             break;  
                         case 81:
-                            //int[] maxSliceSumN = {3,2,-6,4,0};
-                            int[] maxSliceSumN = {3,2,6,4,0,6,1};
+                            int[] maxSliceSumN = {3,2,-6,4,0};
+                            //int[] maxSliceSumN = {3,2,6,4,0,6,1};
                             maxSliceSum.solution(maxSliceSumN);
-                            break;  
+                            break; 
+                         case 82:
+                            // the function should return 17, because no double slice of array A has a sum of greater than 17.
+                            //int[] maxDoubleSliceSumN = {3,2,6,-1,4,5,-1,2};
+                            int[] maxDoubleSliceSumN = {5,1,3,-2,5,-1,6,2};
+                            maxDoubleSliceSum.solution(maxDoubleSliceSumN);
+                            break;    
                         case 666:
                             String helpS = "o";
                             String helpT = "odd";
