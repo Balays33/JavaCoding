@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class CountFactors {
     
-    private int result =0;
+        private int result =0;
     private ArrayList<Integer> values = new ArrayList<>();
     private int help;
     

@@ -45,6 +45,8 @@ public class JavaApps {
         MaxSliceSum maxSliceSum = new MaxSliceSum();
         MaxDoubleSliceSum maxDoubleSliceSum = new MaxDoubleSliceSum();
         CountFactors countFactors = new CountFactors();
+        MinPerimeterRectangle minPerimeterRectangle = new MinPerimeterRectangle();
+        
         MaxProfitS maxProfitS = new MaxProfitS();
         Help help = new Help();
         
@@ -85,6 +87,8 @@ public class JavaApps {
             System.out.println("81: MaxSliceSum");
             System.out.println("82: MaxDoubleSliceSum");
             System.out.println("83: CountFactors");
+            System.out.println("84: MinPerimeterRectangle");
+            
             
             
             
@@ -237,7 +241,12 @@ public class JavaApps {
                             int countFactorsN = 24;
                             //int countFactorsN = 132;
                             countFactors.solution(countFactorsN);
-                            break;    
+                            break; 
+                        case 84:
+                            int minPerimeterRectangleN = 30;
+                            //int minPerimeterRectangleN = 132;
+                            minPerimeterRectangle.solution(minPerimeterRectangleN);
+                            break;     
                         case 666:
                             String helpS = "o";
                             String helpT = "odd";
