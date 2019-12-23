@@ -44,6 +44,7 @@ public class JavaApps {
         MaxProfit maxProfit = new MaxProfit();
         MaxSliceSum maxSliceSum = new MaxSliceSum();
         MaxDoubleSliceSum maxDoubleSliceSum = new MaxDoubleSliceSum();
+        CountFactors countFactors = new CountFactors();
         MaxProfitS maxProfitS = new MaxProfitS();
         Help help = new Help();
         
@@ -83,6 +84,9 @@ public class JavaApps {
             System.out.println("80: MaxProfit");
             System.out.println("81: MaxSliceSum");
             System.out.println("82: MaxDoubleSliceSum");
+            System.out.println("83: CountFactors");
+            
+            
             
             
             
@@ -227,6 +231,12 @@ public class JavaApps {
                             int[] maxDoubleSliceSumN = {3,2,6,-1,4,5,-1,2};
                             //int[] maxDoubleSliceSumN = {5,1,3,-2,5,-1,6,2};
                             maxDoubleSliceSum.solution(maxDoubleSliceSumN);
+                            break;    
+                        case 83:
+                            // For example, given N = 24, the function should return 8, because 24 has 8 factors, namely 1, 2, 3, 4, 6, 8, 12, 24. There are no other factors of 24.
+                            int countFactorsN = 24;
+                            //int countFactorsN = 132;
+                            countFactors.solution(countFactorsN);
                             break;    
                         case 666:
                             String helpS = "o";
