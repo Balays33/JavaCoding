@@ -687,7 +687,7 @@ Lesson 9
       each element of array A is an integer within the range [−1,000,000..1,000,000];
       the result will be an integer within the range [−2,147,483,648..2,147,483,647].
       
-83. MaxDoubleSliceSum
+82. MaxDoubleSliceSum
 
     Find the maximal sum of any double slice. 
 
@@ -740,7 +740,7 @@ Lesson 9
 Lesson 10
 Prime and composite numbers
 
-84. CountFactors
+83. CountFactors
 
      Count factors of given number n.
 
