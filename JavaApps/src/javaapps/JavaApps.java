@@ -47,6 +47,7 @@ public class JavaApps {
         CountFactors countFactors = new CountFactors();
         MinPerimeterRectangle minPerimeterRectangle = new MinPerimeterRectangle();
         CountSemiprimes countSemiprimes = new CountSemiprimes();
+        CountNonDivisible countNonDivisible = new CountNonDivisible();
         
         MaxProfitS maxProfitS = new MaxProfitS();
         Help help = new Help();
@@ -92,8 +93,8 @@ public class JavaApps {
             
             
             System.out.println("87: CountSemiprimes");
-            
-            
+            System.out.println("88: CountNonDivisible");
+           
             
             
             
@@ -250,12 +251,17 @@ public class JavaApps {
                             //int minPerimeterRectangleN = 132;
                             minPerimeterRectangle.solution(minPerimeterRectangleN);
                             break;
-                         case 87:
+                        case 87:
                             int CountSemiprimesN = 26;
                             int[] CountSemiprimesP = {1,4,16};
                             int[] CountSemiprimesQ = {26,10,20};
                             countSemiprimes.solution(CountSemiprimesN,CountSemiprimesP,CountSemiprimesQ);
-                            break; 
+                            break;
+                        case 88:
+                            int[] CountNonDivisibleN = {3,1,2,3,6};
+                            //int[] CountNonDivisibleN = {4,1,2,3,6};
+                            countNonDivisible.solution(CountNonDivisibleN);
+                            break;
                         case 666:
                             String helpS = "o";
                             String helpT = "odd";
