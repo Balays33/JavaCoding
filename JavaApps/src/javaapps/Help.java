@@ -13,6 +13,8 @@ package javaapps;
  */
 public class Help {
     
+     private String result;
+    /*
     private String result;
     private char swap1,swap2,add,join;
     
@@ -63,11 +65,22 @@ public class Help {
                 for (int i= 0; i<S.length();i++){
                     System.out.print(" "+S.charAt(i));
             }
+    }
             */
-         }
+         
+    public String solution(String S, String T) {  
+        
+        
+        
+        
+        
+        
         
         System.out.println("\n"+ result);
         return result;
     }
+    
+    
+    
     
 }

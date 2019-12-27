@@ -48,7 +48,7 @@ public class JavaApps {
         MinPerimeterRectangle minPerimeterRectangle = new MinPerimeterRectangle();
         CountSemiprimes countSemiprimes = new CountSemiprimes();
         CountNonDivisible countNonDivisible = new CountNonDivisible();
-        
+        ChocolatesByNumbers chocolatesByNumbers = new ChocolatesByNumbers();
         MaxProfitS maxProfitS = new MaxProfitS();
         Help help = new Help();
         
@@ -94,7 +94,7 @@ public class JavaApps {
             
             System.out.println("87: CountSemiprimes");
             System.out.println("88: CountNonDivisible");
-           
+            System.out.println("89: ChocolatesByNumbers");
             
             
             
@@ -261,6 +261,13 @@ public class JavaApps {
                             int[] CountNonDivisibleN = {3,1,2,3,6};
                             //int[] CountNonDivisibleN = {4,1,2,3,6};
                             countNonDivisible.solution(CountNonDivisibleN);
+                            break;
+                        case 89:
+                            //int chocolatesByNumbersN = 10;
+                            //int chocolatesByNumbersM = 4;
+                            int chocolatesByNumbersN = 7;
+                            int chocolatesByNumbersM = 5;
+                            chocolatesByNumbers.solution(chocolatesByNumbersN,chocolatesByNumbersM);
                             break;
                         case 666:
                             String helpS = "o";
