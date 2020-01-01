@@ -49,6 +49,7 @@ public class JavaApps {
         CountSemiprimes countSemiprimes = new CountSemiprimes();
         CountNonDivisible countNonDivisible = new CountNonDivisible();
         ChocolatesByNumbers chocolatesByNumbers = new ChocolatesByNumbers();
+        CommonPrimeDivisors commonPrimeDivisors = new CommonPrimeDivisors();
         MaxProfitS maxProfitS = new MaxProfitS();
         Help help = new Help();
         
@@ -95,6 +96,9 @@ public class JavaApps {
             System.out.println("87: CountSemiprimes");
             System.out.println("88: CountNonDivisible");
             System.out.println("89: ChocolatesByNumbers");
+            System.out.println("90: CommonPrimeDivisors");
+            
+                    
             
             
             
@@ -268,6 +272,11 @@ public class JavaApps {
                             int chocolatesByNumbersN = 7;
                             int chocolatesByNumbersM = 5;
                             chocolatesByNumbers.solution(chocolatesByNumbersN,chocolatesByNumbersM);
+                            break;
+                         case 90:
+                            int[] commonPrimeDivisorsA = {15,10,3};
+                            int[] commonPrimeDivisorsB = {75,30,5};
+                            commonPrimeDivisors.solution(commonPrimeDivisorsA,commonPrimeDivisorsB);
                             break;
                         case 666:
                             String helpS = "o";
