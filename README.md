@@ -1006,6 +1006,7 @@ Lesson 14
 Binary search algorithm
 
 93. NailingPlanks    !!! I AM NOT SURE ABOUT THE CONCEPT !!!
+    https://github.com/ZRonchy/Codility/blob/master/Lesson12/NailingPlanks.java
 
    Count the minimum number of nails that allow a series of planks to be nailed.
 
