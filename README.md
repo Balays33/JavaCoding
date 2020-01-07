@@ -1005,7 +1005,7 @@ Fibonacci numbers
 Lesson 14
 Binary search algorithm
 
-93. NailingPlanks
+93. NailingPlanks    !!! I AM NOT SURE ABOUT THE CONCEPT !!!
 
    Count the minimum number of nails that allow a series of planks to be nailed.
 
