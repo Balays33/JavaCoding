@@ -32,6 +32,8 @@ Max Profit With KTransactions You are given an array of integers representing th
 Sample input [5,11,3,50,60,90],2
 Sample output: 93 (Buy.5,Sell: 11; Buy. 3, Sell: 90)
 
+50. Kerek prím keresés. Kerek prímnek nevezzük az olyan prímet, mely számjegyeinek összes "forgatásából" adódó szám is prím. Például: 719 --> 197 --> 971 --> 719 (körbeértünk), tehát 719 összes forgatása: 197, 971, amik szintén prímek, tehát 719 kerek prím. Feladat: Hány kerek prím van 1 millió alatt? Amit várunk: egy kész implementáció, mely kiszámolja és kiírja az 1 millió alatti kerek prímek számát.
+
 https://app.codility.com/programmers/lessons/1-iterations/
 
 Lesson 1
