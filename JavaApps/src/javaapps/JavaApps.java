@@ -50,7 +50,10 @@ public class JavaApps {
         CountNonDivisible countNonDivisible = new CountNonDivisible();
         ChocolatesByNumbers chocolatesByNumbers = new ChocolatesByNumbers();
         CommonPrimeDivisors commonPrimeDivisors = new CommonPrimeDivisors();
+        NailingPlanks nailingPlanks = new NailingPlanks();
+        MinMaxDivision minMaxDivision = new MinMaxDivision();
         MaxProfitS maxProfitS = new MaxProfitS();
+        Prime719 prime719 = new Prime719();
         Help help = new Help();
         
         
@@ -66,6 +69,9 @@ public class JavaApps {
             System.out.println("4: Integer Palindrome");
             System.out.println("5: Armstrong number");
             System.out.println("6: Avoiding deadlock");
+            
+            System.out.println("49: Prime719 NOT Working");
+            
             System.out.println("50: MaxProfitS");
             System.out.println("51: Smallest Positive Integer");
             System.out.println("52: BinaryGap");
@@ -97,6 +103,11 @@ public class JavaApps {
             System.out.println("88: CountNonDivisible");
             System.out.println("89: ChocolatesByNumbers");
             System.out.println("90: CommonPrimeDivisors");
+            
+            System.out.println("93: NailingPlanks! !! I AM NOT SURE !!" );
+            System.out.println("94: MinMaxDivision" );
+            
+            
             
                     
             
@@ -130,6 +141,13 @@ public class JavaApps {
                             break;
                         case 6:
                             avoidingdeadlock.run();
+                            break;
+                        case 49:
+                            prime719.solution();
+                            //prime719.findKerekPrim(719);
+                            //prime719.checkPNumber(749);
+                            //prime719.isItKerekPrim(111);
+                            prime719.kiir();
                             break;
                         case 50:
                             int[] maxProfitSN = new int[]{5,11,3,50,60,90};
@@ -277,6 +295,21 @@ public class JavaApps {
                             int[] commonPrimeDivisorsA = {15,10,3};
                             int[] commonPrimeDivisorsB = {75,30,5};
                             commonPrimeDivisors.solution(commonPrimeDivisorsA,commonPrimeDivisorsB);
+                            break;
+                        case 93:
+                            int[] nailingPlanksA = {1,4,5,8};
+                            int[] nailingPlanksB = {4,5,9,10};
+                            int[] nailingPlanksC= {4,6,7,10,2};
+                            //int[] nailingPlanksA = {28, 18, 43, 15, 26, 18, 21, 49, 6, 23, 12, 18, 50, 17, 31,21, 37, 23, 9, 22, 21, 40, 29, 10, 34, 15, 26, 11, 21, 40, 26,  38, 38, 30, 33, 20, 31, 39, 5, 47, 19, 7, 8, 18, 4, 20, 21, 33,24, 47, 33, 17, 44, 35, 49, 37, 49, 11, 14, 49, 2, 47, 6, 7,8, 46, 48, 44, 37, 38, 16, 1, 32, 45, 48, 26, 1, 9, 23, 12, 2,10, 25, 7, 6, 9, 2, 40, 44, 11, 32, 44, 13, 17, 45, 39, 32, 40,29, 16};
+                            //int[] nailingPlanksB = { 55, 32, 44, 48, 36, 31, 41, 81, 56, 46, 62, 68, 62, 20,39, 63, 67, 69, 58, 55, 48, 43, 30, 51, 68, 53, 54, 45, 53, 85,  31, 63, 53, 72, 77, 32, 35, 51, 21, 86, 39, 45, 23, 44, 13, 52,47, 76, 72, 73, 36, 64, 92, 59, 73, 84, 61, 24, 49, 83, 36, 89, 72, 28, 19, 56, 66, 66, 74, 69, 42, 20, 63, 64, 88, 58, 36, 28,  49, 48, 50, 36, 41, 42, 12, 26, 3, 68, 56, 30, 72, 76, 14, 39,45, 80, 57, 83, 42, 57};
+                            //int[] nailingPlanksC= {4,6,7,10,2};
+                            nailingPlanks.solution(nailingPlanksA,nailingPlanksB,nailingPlanksC);
+                            break;
+                        case 94:
+                            int[] MainMaxDivisionA = {2,1,5,1,2,2,2};
+                            int MinMaxDivisionK = 3;
+                            int MinMaxDivisionM = 5;
+                            minMaxDivision.solution(MinMaxDivisionK,MinMaxDivisionM,MainMaxDivisionA);
                             break;
                         case 666:
                             String helpS = "o";
