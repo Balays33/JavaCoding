@@ -23,6 +23,11 @@ A number is called an Armstrong number if it is equal to the cube of its every d
 This is one of the interesting programs from Java Interviews, mostly asked to 2 to 3 years of experienced programmers or higher. The interviewer simply asked you to write code where a resource is accessed by multiple threads. You need to write code in such a way that no deadlock should occur. The trick to solving this problem is acquiring resources in order and release them in reverse order, e.g. first acquire resource R1 and only if you have got R1 to go for R2. This way, you can avoid deadlock.
 
 
+49.
+
+Kerek prím keresés. Kerek prímnek nevezzük az olyan prímet, mely számjegyeinek összes "forgatásából" adódó szám is prím. Például: 719 --> 197 --> 971 --> 719 (körbeértünk), tehát 719 összes forgatása: 197, 971, amik szintén prímek, tehát 719 kerek prím. Feladat: Hány kerek prím van 1 millió alatt? Amit várunk: egy kész implementáció, mely kiszámolja és kiírja az 1 millió alatti kerek prímek számát.
+
+
 50.
 https://www.algoexpert.io/product
 
@@ -31,6 +36,8 @@ Question:
 Max Profit With KTransactions You are given an array of integers representing the prices of a single stock on varlous days (each index in the array represent different day). You arealso given an integer k, which represents the number of transactions you are allowed to make One tr consistsof buying thestock on agiven day and selling it on another, later day. Write a function that returns the maxámum pr you can make buying and selling the stock, given k transactions. Note that you can only hold 1 share of the stockatatime; in words you cannot buy more than 1 share of the stock on any given day, and you cannot buy a share of the stockif you another share. Note that you also don't need to use all k transactions that you're allowed.
 Sample input [5,11,3,50,60,90],2
 Sample output: 93 (Buy.5,Sell: 11; Buy. 3, Sell: 90)
+
+
 
 https://app.codility.com/programmers/lessons/1-iterations/
 
@@ -945,3 +952,126 @@ Euclidean algorithm
 
       Z is an integer within the range [1..6,000];
       each element of arrays A, B is an integer within the range [1..2,147,483,647].
+  
+Lesson 13
+Fibonacci numbers
+
+91. Ladder
+
+   Count the number of different ways of climbing to the top of a ladder.
+
+   You have to climb up a ladder. The ladder has exactly N rungs, numbered from 1 to N. With each step, you can ascend by one or two rungs. More precisely:
+
+   with your first step you can stand on rung 1 or 2,
+   if you are on rung K, you can move to rungs K + 1 or K + 2,
+   finally you have to stand on rung N.
+   Your task is to count the number of different ways of climbing to the top of the ladder.
+
+   For example, given N = 4, you have five different ways of climbing, ascending by:
+
+   1, 1, 1 and 1 rung,
+   1, 1 and 2 rungs,
+   1, 2 and 1 rung,
+   2, 1 and 1 rungs, and
+   2 and 2 rungs.
+   Given N = 5, you have eight different ways of climbing, ascending by:
+
+   1, 1, 1, 1 and 1 rung,
+   1, 1, 1 and 2 rungs,
+   1, 1, 2 and 1 rung,
+   1, 2, 1 and 1 rung,
+   1, 2 and 2 rungs,
+   2, 1, 1 and 1 rungs,
+   2, 1 and 2 rungs, and
+   2, 2 and 1 rung.
+   The number of different ways can be very large, so it is sufficient to return the result modulo 2P, for a given integer P.
+
+   Write a function:
+
+   class Solution { public int[] solution(int[] A, int[] B); }
+
+   that, given two non-empty arrays A and B of L integers, returns an array consisting of L integers specifying the consecutive answers; position I should contain the number of different ways of climbing the ladder with A[I] rungs modulo 2B[I].
+
+   For example, given L = 5 and:
+
+       A[0] = 4   B[0] = 3
+       A[1] = 4   B[1] = 2
+       A[2] = 5   B[2] = 4
+       A[3] = 5   B[3] = 3
+       A[4] = 1   B[4] = 1
+   the function should return the sequence [5, 1, 8, 0, 1], as explained above.
+
+   Write an efficient algorithm for the following assumptions:
+
+   L is an integer within the range [1..50,000];
+   each element of array A is an integer within the range [1..L];
+   each element of array B is an integer within the range [1..30].
+  
+92. FibFrog
+
+Lesson 14
+Binary search algorithm
+
+93. NailingPlanks    !!! I AM NOT SURE ABOUT THE CONCEPT !!!
+    https://github.com/ZRonchy/Codility/blob/master/Lesson12/NailingPlanks.java
+
+   Count the minimum number of nails that allow a series of planks to be nailed.
+
+   You are given two non-empty arrays A and B consisting of N integers. These arrays represent N planks. More precisely, A[K] is the start and B[K] the end of the K−th plank.
+
+   Next, you are given a non-empty array C consisting of M integers. This array represents M nails. More precisely, C[I] is the position where you can hammer in the I−th nail.
+
+   We say that a plank (A[K], B[K]) is nailed if there exists a nail C[I] such that A[K] ≤ C[I] ≤ B[K].
+
+   The goal is to find the minimum number of nails that must be used until all the planks are nailed. In other words, you should find a value J such that all planks will be nailed after using only the first J nails. More precisely, for every plank (A[K], B[K]) such that 0 ≤ K < N, there should exist a nail C[I] such that I < J and A[K] ≤ C[I] ≤ B[K].
+
+   For example, given arrays A, B such that:
+
+       A[0] = 1    B[0] = 4
+       A[1] = 4    B[1] = 5
+       A[2] = 5    B[2] = 9
+       A[3] = 8    B[3] = 10
+   four planks are represented: [1, 4], [4, 5], [5, 9] and [8, 10].
+
+   Given array C such that:
+
+       C[0] = 4
+       C[1] = 6
+       C[2] = 7
+       C[3] = 10
+       C[4] = 2
+   if we use the following nails:
+
+   0, then planks [1, 4] and [4, 5] will both be nailed.
+   0, 1, then planks [1, 4], [4, 5] and [5, 9] will be nailed.
+   0, 1, 2, then planks [1, 4], [4, 5] and [5, 9] will be nailed.
+   0, 1, 2, 3, then all the planks will be nailed.
+   Thus, four is the minimum number of nails that, used sequentially, allow all the planks to be nailed.
+
+   Write a function:
+
+   class Solution { public int solution(int[] A, int[] B, int[] C); }
+
+   that, given two non-empty arrays A and B consisting of N integers and a non-empty array C consisting of M integers, returns the minimum number of nails that, used sequentially, allow all the planks to be nailed.
+
+   If it is not possible to nail all the planks, the function should return −1.
+
+   For example, given arrays A, B, C such that:
+
+       A[0] = 1    B[0] = 4
+       A[1] = 4    B[1] = 5
+       A[2] = 5    B[2] = 9
+       A[3] = 8    B[3] = 10
+
+       C[0] = 4
+       C[1] = 6
+       C[2] = 7
+       C[3] = 10
+       C[4] = 2
+   the function should return 4, as explained above.
+
+   Write an efficient algorithm for the following assumptions:
+
+   N and M are integers within the range [1..30,000];
+   each element of arrays A, B, C is an integer within the range [1..2*M];
+   A[K] ≤ B[K].
