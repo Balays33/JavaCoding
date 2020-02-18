@@ -55,6 +55,7 @@ public class JavaApps {
         MaxProfitS maxProfitS = new MaxProfitS();
         Prime719 prime719 = new Prime719();
         CountDistinctSlices countDistinctSlices =  new CountDistinctSlices();
+        AbsDistinct absDistinct = new AbsDistinct();
         Help help = new Help();
         
         
@@ -108,6 +109,8 @@ public class JavaApps {
             System.out.println("93: NailingPlanks! !! I AM NOT SURE !!" );
             System.out.println("94: MinMaxDivision" );
             System.out.println("95: CountDistinctSlices" );
+            System.out.println("96: AbsDistinct" );
+            
             
             
             
@@ -318,6 +321,11 @@ public class JavaApps {
                             int countDistinctSlicesM = 6;
                             int[] countDistinctSlicesA = {3,4,5,5,2};
                             countDistinctSlices.solution(countDistinctSlicesM, countDistinctSlicesA);
+                            break;
+                        case 96:
+                            //int[] AbsDistinctA = {-5,-3,-1,0,3,6};
+                            int[] AbsDistinctA = {3,-3,0,-1,-5,6};
+                            absDistinct.solution(AbsDistinctA);
                             break;
                         case 666:
                             String helpS = "o";
