@@ -56,6 +56,7 @@ public class JavaApps {
         Prime719 prime719 = new Prime719();
         CountDistinctSlices countDistinctSlices =  new CountDistinctSlices();
         AbsDistinct absDistinct = new AbsDistinct();
+        CountTriangles countTriangles = new CountTriangles();
         Help help = new Help();
         
         
@@ -110,18 +111,12 @@ public class JavaApps {
             System.out.println("94: MinMaxDivision" );
             System.out.println("95: CountDistinctSlices" );
             System.out.println("96: AbsDistinct" );
+            System.out.println("97: CountTriangles" );
             
             
             
             
-            
-                    
-            
-            
-            
-            
-            
-             
+          
             
             
             System.out.println("0: EXIT");
@@ -326,6 +321,10 @@ public class JavaApps {
                             //int[] AbsDistinctA = {-5,-3,-1,0,3,6};
                             int[] AbsDistinctA = {3,-3,0,-1,-5,6};
                             absDistinct.solution(AbsDistinctA);
+                            break;
+                        case 97:
+                            int[] CountTrianglesN ={10,2,5,1,8,12};
+                            countTriangles.solution(CountTrianglesN);
                             break;
                         case 666:
                             String helpS = "o";
