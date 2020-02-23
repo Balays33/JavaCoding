@@ -57,6 +57,7 @@ public class JavaApps {
         CountDistinctSlices countDistinctSlices =  new CountDistinctSlices();
         AbsDistinct absDistinct = new AbsDistinct();
         CountTriangles countTriangles = new CountTriangles();
+        MinAbsSumOfTwo  minAbsSumOfTwo = new MinAbsSumOfTwo();
         Help help = new Help();
         
         
@@ -112,6 +113,8 @@ public class JavaApps {
             System.out.println("95: CountDistinctSlices" );
             System.out.println("96: AbsDistinct" );
             System.out.println("97: CountTriangles" );
+            System.out.println("98: MinAbsSumOfTwo" );
+            
             
             
             
@@ -325,6 +328,11 @@ public class JavaApps {
                         case 97:
                             int[] CountTrianglesN ={10,2,5,1,8,12};
                             countTriangles.solution(CountTrianglesN);
+                            break;
+                        case 98:
+                            //int[] minAbsSumOfTwoN ={1,4,-3};
+                            int[] minAbsSumOfTwoN ={-8,4,5,-10,3};
+                            minAbsSumOfTwo.solution(minAbsSumOfTwoN);
                             break;
                         case 666:
                             String helpS = "o";
