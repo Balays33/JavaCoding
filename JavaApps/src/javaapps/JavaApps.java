@@ -58,6 +58,8 @@ public class JavaApps {
         AbsDistinct absDistinct = new AbsDistinct();
         CountTriangles countTriangles = new CountTriangles();
         MinAbsSumOfTwo  minAbsSumOfTwo = new MinAbsSumOfTwo();
+        MaxNonoverlappingSegments maxNonoverlappingSegments = new MaxNonoverlappingSegments();
+        TieRopes tieRopes = new TieRopes();
         Help help = new Help();
         
         
@@ -114,7 +116,9 @@ public class JavaApps {
             System.out.println("96: AbsDistinct" );
             System.out.println("97: CountTriangles" );
             System.out.println("98: MinAbsSumOfTwo" );
-            
+            System.out.println("99: MaxNonoverlappingSegments" );
+            System.out.println("100: TieRopes" );
+           
             
             
             
@@ -333,6 +337,16 @@ public class JavaApps {
                             //int[] minAbsSumOfTwoN ={1,4,-3};
                             int[] minAbsSumOfTwoN ={-8,4,5,-10,3};
                             minAbsSumOfTwo.solution(minAbsSumOfTwoN);
+                            break;
+                        case 99:
+                            int[] MaxNonoverlappingSegmentsA ={1,3,7,9,9};
+                            int[] MaxNonoverlappingSegmentsB ={5,6,8,9,10};
+                            maxNonoverlappingSegments.solution(MaxNonoverlappingSegmentsA,MaxNonoverlappingSegmentsB);        
+                            break;
+                        case 100:
+                            int tieRopeK =4;
+                            int[] tieRopeA ={1,2,3,4,1,1,3};
+                            tieRopes.solution(tieRopeK, tieRopeA);
                             break;
                         case 666:
                             String helpS = "o";
