@@ -60,6 +60,7 @@ public class JavaApps {
         MinAbsSumOfTwo  minAbsSumOfTwo = new MinAbsSumOfTwo();
         MaxNonoverlappingSegments maxNonoverlappingSegments = new MaxNonoverlappingSegments();
         TieRopes tieRopes = new TieRopes();
+        Factorial factorial = new Factorial();
         Help help = new Help();
         
         
@@ -75,6 +76,7 @@ public class JavaApps {
             System.out.println("4: Integer Palindrome");
             System.out.println("5: Armstrong number");
             System.out.println("6: Avoiding deadlock");
+            System.out.println("7: factorial");
             
             System.out.println("49: Prime719 NOT Working");
             
@@ -149,6 +151,11 @@ public class JavaApps {
                             break;
                         case 6:
                             avoidingdeadlock.run();
+                            break;
+                        case 7:
+                            int factorialN = 120;
+                            int factorialof6 = 6;
+                            factorial.solution(factorialN,factorialof6);
                             break;
                         case 49:
                             prime719.solution();
