@@ -18,10 +18,10 @@ public class ReverseaString {
         
         System.out.println("Please give a String");
         Scanner text = new Scanner(System.in);
-        //StringBuffer b = text.nextLine();
         String a = text.nextLine();
         StringBuffer s=new StringBuffer(a);
         System.out.println("your text "+s.reverse());
+        System.out.println("your text size: "+s.length());
     
     return result;
     }
