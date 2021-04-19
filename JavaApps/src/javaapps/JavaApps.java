@@ -361,9 +361,9 @@ public class JavaApps {
                             tieRopes.solution(tieRopeK, tieRopeA);
                             break;
                         case 666:
-                            String helpS = "o";
-                            String helpT = "odd";
-                            help.solution(helpS,helpT);
+                            int helpS = 268;
+                            
+                            help.solution(helpS);
                             break;
                         default:
                             System.exit(0);
